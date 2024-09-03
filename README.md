@@ -1,11 +1,11 @@
 # [Wikidata Graph Builder](https://angryloki.github.io/wikidata-graph-builder/)
-Visualize [Wikidata](https://www.wikidata.org) items using [d3.js](http://d3js.org/).
+Visualize an instance of [Wikibase](https://wikiba.se/) items using [d3.js](http://d3js.org/).
 
 ## Main features
 * Forward and backward graph traversal using [RDF GAS API](https://wiki.blazegraph.com/wiki/index.php/RDF_GAS_API)
 * Support for various languages for item labels
 * Limits for number of iterations and number of items in graph
-* SPARQL query generation for [Wikidata Query Service](https://query.wikidata.org/) and links to [Wikidata generic tree](https://tools.wmflabs.org/wikidata-todo/tree.html)
+* SPARQL query generation for a [Wikibase query service](https://github.com/wikimedia/wikidata-query-gui) and links to [Wikidata generic tree](https://tools.wmflabs.org/wikidata-todo/tree.html)
 
 ## Developing
 

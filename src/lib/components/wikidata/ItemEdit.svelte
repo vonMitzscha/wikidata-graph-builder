@@ -30,7 +30,7 @@
         if (type === "property") {
             namespace = "Property:";
         }
-        return `https://www.wikidata.org/wiki/${namespace}${value!.id}`;
+        return `http://localhost/wiki/${namespace}${value!.id}`;
     };
     const getLabel = (value: ValueItem | undefined) => {
         return value!.label?.value ?? value!.id;

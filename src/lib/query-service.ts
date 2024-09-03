@@ -26,7 +26,7 @@ export type QueryResponse = {
 
 export class QueryService {
 	public static getInstance(init: QueryServiceInit = {}): QueryService {
-		const endpointUrl = init.endpointUrl ?? 'https://query.wikidata.org/sparql';
+		const endpointUrl = init.endpointUrl ?? 'http://localhost:8834/proxy/wdqs/bigdata/namespace/wdq/sparql';
 		if (!QueryService.instances[endpointUrl]) {
 			QueryService.instances[endpointUrl] = new QueryService(init);
 		}
@@ -42,7 +42,7 @@ export class QueryService {
 	private readonly fetch: FetchFn;
 
 	private constructor(init: QueryServiceInit = {}) {
-		this.endpointUrl = init.endpointUrl ?? 'https://query.wikidata.org/sparql';
+		this.endpointUrl = init.endpointUrl ?? 'http://localhost:8834/proxy/wdqs/bigdata/namespace/wdq/sparql';
 		this.fetch = init.fetch ?? (async (...args) => fetch(...args));
 	}
 

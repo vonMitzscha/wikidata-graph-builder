@@ -15,7 +15,7 @@ export const languageSearch = async (search: string, abortSignal: AbortSignal): 
 	};
 
 	const wikidataClient = MwApiService.getInstance({
-		server: 'https://www.wikidata.org',
+		server: 'http://localhost',
 	});
 
 	type SearchResults = {
@@ -54,7 +54,7 @@ const getLanguagesMap = async () => {
 	};
 
 	const wikidataClient = MwApiService.getInstance({
-		server: 'https://www.wikidata.org',
+		server: 'http://localhost',
 	});
 
 	type QuerySiteinfoLanguagesResult = {

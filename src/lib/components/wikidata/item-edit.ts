@@ -32,7 +32,7 @@ export const searchEntities = async (type: ValueType, search: string, language: 
 	}
 
 	const wikidataClient = MwApiService.getInstance({
-		server: 'https://www.wikidata.org',
+		server: 'http://localhost',
 	});
 
 	type SearchResult = {
@@ -108,7 +108,7 @@ export const getEntity = async (id: string, language: string | undefined, abortS
 	};
 
 	const wikidataClient = MwApiService.getInstance({
-		server: 'https://www.wikidata.org',
+		server: 'http://localhost',
 	});
 
 	const response = (await wikidataClient.call(parameters, {signal: abortSignal})) as WbGetEntitiesResult;
