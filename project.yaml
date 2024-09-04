@@ -1,0 +1,3 @@
+get_url: http://localhost/wiki/
+server: http://localhost
+sparql_endpoint: http://localhost:8834/proxy/wdqs/bigdata/namespace/wdq/sparql

@@ -27,7 +27,7 @@
     let zeroValue = 0;
 
     const options: Record<string, string> = Object.fromEntries(
-        Array.from(Array(100), (_, i) => [`option${i + 1}`, `Option ${i + 1}`])
+        Array.from(Array(100), (_, i) => [`option${i + 1}`, `Option ${i + 1}`]),
     );
     let option = "option1";
 
@@ -179,11 +179,11 @@ valueObject={JSON.stringify(itemValue)}</pre>
     links={[
         {
             text: "This is a very long action",
-            link: "http://localhost:5173/components",
+            link: "https://localhost:5173/components",
         },
         {
             text: "This is a very long action",
-            link: "http://localhost:5173/components",
+            link: "https://localhost:5173/components",
         },
     ]}
 />

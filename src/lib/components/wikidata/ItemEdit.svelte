@@ -30,7 +30,7 @@
         if (type === "property") {
             namespace = "Property:";
         }
-        return `http://localhost/wiki/${namespace}${value!.id}`;
+        return `https://localhost/wiki/${namespace}${value!.id}`;
     };
     const getLabel = (value: ValueItem | undefined) => {
         return value!.label?.value ?? value!.id;

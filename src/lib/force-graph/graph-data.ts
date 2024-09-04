@@ -226,5 +226,5 @@ const itemTooltip = (label: string, size: number | undefined = undefined) => {
 };
 
 const itemLabel = (element: QueryResponseBinding) => element.itemLabel?.value
-					?? /^http:\/\/www.wikidata.org\/entity\/(.+)$/.exec(element.item.value!)?.[1]
+					?? /^https:\/\/localhost\/entity\/(.+)$/.exec(element.item.value!)?.[1]
 					?? element.item.value!;

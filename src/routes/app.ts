@@ -150,7 +150,7 @@ export const updateUrl = async (query: QueryParameters, vis: VisParameters, repl
 
 const wdqsLink = function (state: QueryParameters) {
 	const query = '#defaultView:Graph\n' + generateQuery(state)!;
-	return 'https://query.wikidata.org/#' + encodeURIComponent(query);
+	return 'https://localhost:8834/#' + encodeURIComponent(query);
 };
 
 const listLink = (state: QueryParameters) => {
