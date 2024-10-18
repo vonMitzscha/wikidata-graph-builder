@@ -179,11 +179,11 @@ valueObject={JSON.stringify(itemValue)}</pre>
     links={[
         {
             text: "This is a very long action",
-            link: "https://factgrid-graphbuilder.netlify.app/components",
+            link: "https://database.factgrid.de/components",
         },
         {
             text: "This is a very long action",
-            link: "https://factgrid-graphbuilder.netlify.app/components",
+            link: "https://database.factgrid.de/components",
         },
     ]}
 />
