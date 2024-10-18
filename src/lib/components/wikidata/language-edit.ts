@@ -15,7 +15,7 @@ export const languageSearch = async (search: string, abortSignal: AbortSignal): 
 	};
 
 	const wikidataClient = MwApiService.getInstance({
-		server: 'https://factgrid-graphbuilder.netlify.app',
+		server: 'https://database.factgrid.de',
 	});
 
 	type SearchResults = {
@@ -54,7 +54,7 @@ const getLanguagesMap = async () => {
 	};
 
 	const wikidataClient = MwApiService.getInstance({
-		server: 'https://factgrid-graphbuilder.netlify.app',
+		server: 'https://database.factgrid.de',
 	});
 
 	type QuerySiteinfoLanguagesResult = {
