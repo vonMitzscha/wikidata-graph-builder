@@ -150,7 +150,7 @@ export const updateUrl = async (query: QueryParameters, vis: VisParameters, repl
 
 const wdqsLink = function (state: QueryParameters) {
 	const query = '#defaultView:Graph\n' + generateQuery(state)!;
-	return 'https://factgrid-graphbuilder.netlify.app/#' + encodeURIComponent(query);
+	return 'https://database.factgrid.de/#' + encodeURIComponent(query);
 };
 
 const listLink = (state: QueryParameters) => {
