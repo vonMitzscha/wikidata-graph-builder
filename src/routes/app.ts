@@ -150,11 +150,24 @@ export const updateUrl = async (query: QueryParameters, vis: VisParameters, repl
 
 const wdqsLink = function (state: QueryParameters) {
 	const query = '#defaultView:Graph\n' + generateQuery(state)!;
-	return 'https://database.factgrid.de/#' + encodeURIComponent(query);
+	return 'https://database.factgrid.de/query/#' + encodeURIComponent(query);
 };
 
 const listLink = (state: QueryParameters) => {
-	let url = 'https://tools.wmflabs.org/wikidata-todo/tree.html?q=' + (state.item!.slice(1));
+	let url = 'https://www.entitree.com/factgrid' + (state.item!.slice(1));
+
+	// Füge die Sprache, die Traversal-Property und das Root-Item hinzu
+	if (state.language) {
+		url += `/${state.language}`; // Aktuelle Sprache hinzufügen
+	}
+
+	if (state.property) {
+		url += `/${state.property}`; // Traversal-Property hinzufügen
+	}
+
+	if (state.item) {
+		url += `/${state.item}`; // Root-Item hinzufügen
+	}
 
 	if (state.mode === 'reverse' || state.mode === 'both') {
 		url += '&rp=' + (state.property!.slice(1));
@@ -181,13 +194,13 @@ export const getLinks = (state: QueryParameters) => {
 	}
 
 	const links = [{
-		text: 'Wikidata Query Service',
+		text: 'FactGrid Query Service',
 		link: wdqsLink(state),
 	}];
 
 	if (state.mode === 'forward' || state.mode === 'reverse') {
 		links.push({
-			text: 'Wikidata generic tree',
+			text: 'EntiTree',
 			link: listLink(state),
 		});
 	}
