@@ -69,7 +69,7 @@
     {#if $state === "error"}
         <div class="absolute inset-0 flex items-center justify-center ">
             <div
-                class="flex p-4 mx-4 text-sm rounded bg-gray-800 text-red-400 items-center"
+                class="flex p-4 mx-4 text-sm rounded bg-gray-100 text-red-400 items-center"
                 role="alert"
             >
                 <IconEx path={mdiAlert} class="w-16 h-16 fill-red-400" />

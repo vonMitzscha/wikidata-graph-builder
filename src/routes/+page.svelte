@@ -51,7 +51,7 @@
 
 <div class="h-screen max-h-screen md:flex">
     <button
-        class="absolute top-6 left-0 bg-gray-800/90 w-16 h-16 md:hidden 
+        class="absolute top-6 left-0 bg-gray-100/90 w-16 h-16 md:hidden 
         flex items-center justify-center rounded-r-lg z-10
         {drawerVisible ? 'hidden' : ''}"
         on:click={() => {
@@ -71,7 +71,7 @@
     />
 
     <div
-        class="w-72 flex-none shadow-lg bg-gray-800/90 md:bg-gray-800 overflow-y-auto absolute left-0 top-0 bottom-0 md:static
+        class="w-72 flex-none shadow-lg bg-gray-100/90 md:bg-gray-100 overflow-y-auto absolute left-0 top-0 bottom-0 md:static
         {drawerVisible
             ? 'translate-x-0 shadow-gray-900'
             : 'transition-transform -translate-x-full'}
@@ -80,7 +80,7 @@
     >
         <a
             href={rootPage}
-            class="block bg-indigo-700 text-indigo-100 text-xl p-3"
+            class="block bg-gray-100 text-indigo-900 text-xl p-3"
         >
             FactGrid Graph Builder
         </a>
