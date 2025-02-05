@@ -154,7 +154,7 @@ const wdqsLink = function (state: QueryParameters) {
 };
 
 const listLink = (state: QueryParameters) => {
-	let url = 'https://www.entitree.com/factgrid' + (state.item!.slice(1));
+	let url = 'https://www.entitree.com/factgrid';
 
 	// Füge die Sprache, die Traversal-Property und das Root-Item hinzu
 	if (state.language) {
@@ -167,22 +167,6 @@ const listLink = (state: QueryParameters) => {
 
 	if (state.item) {
 		url += `/${state.item}`; // Root-Item hinzufügen
-	}
-
-	if (state.mode === 'reverse' || state.mode === 'both') {
-		url += '&rp=' + (state.property!.slice(1));
-	}
-
-	if (state.mode === 'forward' || state.mode === 'both') {
-		url += '&p=' + (state.property!.slice(1));
-	}
-
-	if (state.iterations !== 0) {
-		url += `&depth=${state.iterations ?? 0}`;
-	}
-
-	if (state.language !== 'en') {
-		url += `&lang=${state.language ?? 'en'}`;
 	}
 
 	return url;
