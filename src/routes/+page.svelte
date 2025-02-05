@@ -46,7 +46,7 @@
 </script>
 
 <svelte:head>
-    <title>Wikidata Graph Builder</title>
+    <title>FactGrid Graph Builder</title>
 </svelte:head>
 
 <div class="h-screen max-h-screen md:flex">
@@ -82,7 +82,7 @@
             href={rootPage}
             class="block bg-indigo-700 text-indigo-100 text-xl p-3"
         >
-            Wikidata Graph Builder
+            FactGrid Graph Builder
         </a>
 
         <div class="px-2 py-2">

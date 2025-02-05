@@ -86,11 +86,11 @@ SERVICE wikibase:label {bd:serviceParam wikibase:language "en" }
     };
 </script>
 
-<h1 class="text-3xl md:text-4xl my-8">Wikidata Graph Builder</h1>
+<h1 class="text-3xl md:text-4xl my-8">FractGrid Graph Builder</h1>
 <p>
     Build graphs using
-    <a href="https://www.wikidata.org">Wikidata </a>
-    <a href="https://query.wikidata.org/">Query Service</a>.
+    <a href="https://database.factgrid.de/wiki/Main_Page">FactGrid </a>
+    <a href="https://database.factgrid.de/query/">Query Service</a>.
 </p>
 <p>Examples:</p>
 <ul>
@@ -106,7 +106,7 @@ SERVICE wikibase:label {bd:serviceParam wikibase:language "en" }
     The source code released under
     <a href="https://opensource.org/licenses/MIT">MIT license </a>
     at
-    <a href="https://github.com/AngryLoki/wikidata-tree-builder"> GitHub </a>.
+    <a href="https://github.com/vonMitzscha/wikidata-graph-builder"> GitHub </a>.
 </p>
 
 <style lang="postcss">

@@ -30,7 +30,7 @@
         if (type === "property") {
             namespace = "Property:";
         }
-        return `https://factgrid-graphbuilder.netlify.app/wiki/${namespace}${value!.id}`;
+        return `https://database.factgrid.de/wiki/Item:${namespace}${value!.id}`;
     };
     const getLabel = (value: ValueItem | undefined) => {
         return value!.label?.value ?? value!.id;
