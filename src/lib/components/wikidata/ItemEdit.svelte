@@ -26,11 +26,11 @@
         getEntity(value, language, abortSignal);
 
     const getUrl = (value: ValueItem | undefined) => {
-        let namespace = "";
+        let namespace = "Item:";
         if (type === "property") {
             namespace = "Property:";
         }
-        return `https://database.factgrid.de/wiki/Item:${namespace}${value!.id}`;
+        return `https://database.factgrid.de/wiki/${namespace}${value!.id}`;
     };
     const getLabel = (value: ValueItem | undefined) => {
         return value!.label?.value ?? value!.id;
