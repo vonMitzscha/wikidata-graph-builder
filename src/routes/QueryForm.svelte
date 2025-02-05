@@ -147,7 +147,7 @@
         </Button>
         <DropdownMenu
             class="w-[calc(50%-0.25rem)]"
-            title="Transfer to"
+            title="Tools"
             links={tools}
         />
     </ButtonsBox>

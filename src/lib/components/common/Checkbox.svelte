@@ -15,7 +15,7 @@
         type="checkbox"
         {id}
         class="form-checkbox w-4 h-4 rounded-sm border-[1.99px] border-gray-700 focus-visible:border-blue-600
-        text-blue-600 bg-gray-850 group-hover:bg-gray-100 group-hover:checked:bg-blue-500
+        text-blue-600 bg-gray-850 group-hover:bg-gray-800 group-hover:checked:bg-blue-500
         focus:outline-none focus:ring-0 focus:ring-offset-0 mt-0.5 peer"
         on:change
     />
