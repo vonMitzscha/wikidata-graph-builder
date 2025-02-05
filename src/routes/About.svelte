@@ -86,7 +86,7 @@ SERVICE wikibase:label {bd:serviceParam wikibase:language "en" }
     };
 </script>
 
-<h1 class="text-3xl md:text-4xl my-8">FractGrid Graph Builder</h1>
+<h1 class="text-3xl md:text-4xl my-8">FactGrid Graph Builder</h1>
 <p>
     Build graphs using
     <a href="https://database.factgrid.de/wiki/Main_Page">FactGrid </a>
