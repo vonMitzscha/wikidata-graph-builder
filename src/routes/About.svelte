@@ -3,10 +3,10 @@
         "?" + new URLSearchParams(params).toString();
 
     const examples = {
-        "Parent taxons of Blue Whale (force-based)": {
-            item: "Q42196",
-            property: "P171",
-            sc_color: "#0000003c",
+        "State-organization Duchy Saxe-Gotha-Altenburg (force-based)": {
+            item: "Q40154",
+            property: "P8",
+            graph_direction: "down",
         },
         "Class tree for human (directed)": {
             item: "Q5",
