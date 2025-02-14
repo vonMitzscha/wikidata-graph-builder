@@ -6,7 +6,7 @@
         "State-organization Duchy Saxe-Gotha-Altenburg (force-based)": {
             item: "Q40154",
             property: "P8",
-            graph_direction: "down",
+            mode: "reverse",
         },
         "Class tree for human (directed)": {
             item: "Q5",
