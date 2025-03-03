@@ -8,12 +8,14 @@
             property: "P428",
             mode: "reverse",
             graph_direction: "left",
+            lang: "de",
         },
-        "State-organization Duchy Saxe-Gotha-Altenburg with number of employees (force-baced)": {
+        "State-organization Duchy Saxe-Gotha-Altenburg with number of employees": {
             item: "Q40154",
             property: "P428",
             mode: "reverse",
             size_property: "P315",
+            lang: "de",
         },
         "Pedigree of Duke Ernst II of Saxe-Gotha-Altenburg": {
             item: "Q978",
@@ -63,9 +65,9 @@
     The source code released under
     <a href="https://opensource.org/licenses/MIT">MIT license </a>
     at
-    <a href="https://github.com/vonMitzscha/wikidata-graph-builder"> GitHub </a>. 
+    <a href="https://github.com/vonMitzscha/wikidata-graph-builder"> GitHub</a>. 
     The tool was originally developed by
-    <a href="https://github.com/AngryLoki/wikidata-graph-builder"> AngryLoki </a>.
+    <a href="https://github.com/AngryLoki/wikidata-graph-builder"> AngryLoki</a>.
 </p>
 
 <style lang="postcss">
