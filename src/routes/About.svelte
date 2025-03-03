@@ -1,88 +1,55 @@
+https://factgrid-graphbuilder.netlify.app/?item=Q520368&property=P1007&mode=reverse&iterations=1&lang=de&graph_direction=right
 <script lang="ts">
     const link = (params: Record<string, string>) =>
         "?" + new URLSearchParams(params).toString();
 
     const examples = {
-        "State-organization Duchy Saxe-Gotha-Altenburg (force-based)": {
+        "State-organization Duchy Saxe-Gotha-Altenburg (organisation chart)": {
             item: "Q40154",
-            property: "P8",
+            property: "P428",
             mode: "reverse",
+            graph_direction: "left",
         },
-        "Class tree for human (directed)": {
-            item: "Q5",
-            property: "P279",
+        "State-organization Duchy Saxe-Gotha-Altenburg with number of employees (force-baced)": {
+            item: "Q40154",
+            property: "P428",
+            mode: "reverse",
+            size_property: "P315",
+        },
+        "Pedigree of Duke Ernst II of Saxe-Gotha-Altenburg": {
+            item: "Q978",
+            property: "P150",
+            mode: "reverse",
             graph_direction: "down",
         },
-        "Parents of Nikita Mikhalkov (directed)": {
-            item: "Q55207",
-            property: "P40",
-            mode: "reverse",
-            iterations: "20",
+        "Continuing font grades from Pica": {
+            item: "Q1194171",
+            property: "P6",
+            mode: "both",
             graph_direction: "down",
         },
-        "Children of Agnes of the Palatinate (force-based, 4 generations)": {
+        "OhdABTaxonomy of Speculoos baker": {
             property: "P40",
             item: "Q4450926",
-            iterations: "4",
+            graph_direction: "down",
         },
-        "Types of integers (force-based, counting instances of each type)": {
-            property: "P279",
-            item: "Q12503",
+        "Types of baker in OhdAB": {
+            property: "P1007",
+            item: "Q520368",
             mode: "reverse",
-            size_property: "P31",
+            iterations: "1",
+            direction: "right",
         },
-        "Subclasses of physicists (force-based, counting people by occupation)":
-            {
-                property: "P279",
-                item: "Q169470",
-                mode: "reverse",
-                size_property: "P106",
-            },
-        "Subclasses and parent classes of nonmetals (force-based)": {
-            property: "P279",
-            item: "Q19600",
-            mode: "both",
-        },
-        "People, who were filmed with Jim Carrey": {
-            property: "P161",
-            item: "Q40504",
-            mode: "undirected",
-            iterations: "2",
-        },
-        "All-directional family tree of William Shakespeare": {
-            property: "P40",
-            item: "Q692",
-            mode: "undirected",
-            iterations: "4",
-            graph_direction: "down",
-        },
-        "Is Jesus a descendant of Adam of the 53rd tribe?": {
-            property: "P40",
-            item: "Q70899",
-            iterations: "60",
-            graph_direction: "down",
-        },
-        "Force-directed graph drawing is surely an entity": {
-            property: "P279",
-            item: "Q3076841",
-            graph_direction: "down",
-        },
-        "Connectivity of the USA states (custom query)": {
-            mode: "wdqs",
-            wdqs: `\
+        //"Connectivity of the USA states (custom query)": {
+            //mode: "wdqs",
+            //wdqs: `\
 SELECT ?item ?itemLabel ?linkTo {
 ?item wdt:P31 wd:Q35657 .
 OPTIONAL { ?linkTo wdt:P47 ?item ; wdt:P31 wd:Q35657 } .
 
 SERVICE wikibase:label {bd:serviceParam wikibase:language "en" }
 }`,
-        },
-        "Usage of subclasses of actors": {
-            property: "P279",
-            item: "Q33999",
-            mode: "reverse",
-            size_property: "P106",
-        },
+        },//
     };
 </script>
 
@@ -106,7 +73,9 @@ SERVICE wikibase:label {bd:serviceParam wikibase:language "en" }
     The source code released under
     <a href="https://opensource.org/licenses/MIT">MIT license </a>
     at
-    <a href="https://github.com/vonMitzscha/wikidata-graph-builder"> GitHub </a>.
+    <a href="https://github.com/vonMitzscha/wikidata-graph-builder"> GitHub </a>. 
+    The tool was originally developed by
+    <a href="https://github.com/AngryLoki/wikidata-graph-builder"> AngryLoki </a>.
 </p>
 
 <style lang="postcss">
