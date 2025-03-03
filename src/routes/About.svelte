@@ -39,17 +39,7 @@ https://factgrid-graphbuilder.netlify.app/?item=Q520368&property=P1007&mode=reve
             mode: "reverse",
             iterations: "1",
             direction: "right",
-        },
-        //"Connectivity of the USA states (custom query)": {
-            //mode: "wdqs",
-            //wdqs: `\
-SELECT ?item ?itemLabel ?linkTo {
-?item wdt:P31 wd:Q35657 .
-OPTIONAL { ?linkTo wdt:P47 ?item ; wdt:P31 wd:Q35657 } .
-
-SERVICE wikibase:label {bd:serviceParam wikibase:language "en" }
-}`,
-        },//
+        }, 
     };
 </script>
 
