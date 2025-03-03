@@ -1,4 +1,3 @@
-https://factgrid-graphbuilder.netlify.app/?item=Q520368&property=P1007&mode=reverse&iterations=1&lang=de&graph_direction=right
 <script lang="ts">
     const link = (params: Record<string, string>) =>
         "?" + new URLSearchParams(params).toString();
@@ -22,23 +21,24 @@ https://factgrid-graphbuilder.netlify.app/?item=Q520368&property=P1007&mode=reve
             mode: "reverse",
             graph_direction: "down",
         },
-        "Continuing font grades from Pica": {
+        "Continuing font grades from Cicero": {
             item: "Q1194171",
             property: "P6",
             mode: "both",
             graph_direction: "down",
+            lang: "de",
         },
         "OhdABTaxonomy of Speculoos baker": {
-            property: "P40",
-            item: "Q4450926",
-            graph_direction: "down",
+            property: "P1007",
+            item: "Q673131",
+            graph_direction: "up",
         },
         "Types of baker in OhdAB": {
             property: "P1007",
             item: "Q520368",
             mode: "reverse",
             iterations: "1",
-            direction: "right",
+            graph_direction: "right",
         }, 
     };
 </script>
